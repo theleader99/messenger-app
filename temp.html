@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Messenger</title>
+        <style>
+            .avatar{
+                width:100%;
+                border : 1px solid black;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+<body class="h-100">
+    <div class="row h-100">
+        <div class="col-2 col-md-3 h-100">
+            <div class="row p-3">
+                <button class="btn btn-primary btn-block">Create the conversation</button>
+            </div>
+            <div class="d-flex">
+                <div style="width:100px">
+                    <img src="data:image/png;base64,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"class="avatar" alt="">
+
+                </div>
+                <div class="flex-grow-1 "></div>
+                    <h2>Working</h2>
+                    <span>Hello</span>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
